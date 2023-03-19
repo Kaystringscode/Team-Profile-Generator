@@ -212,13 +212,13 @@ const writeFile = data => {
 }; 
 
 addManager()
-//   .then(addEmployee)
-//   .then(teamArray => {
-//     return generateTeam(teamArray);
-//   })
-//   .then(pageHTML => {
-//     return writeFile(pageHTML);
-//   })
+  .then(addEmployee)
+  .then(teamArray => {
+    return generateTeam(teamArray);
+  })
+  .then(pageHTML => {
+    return writeFile(pageHTML);
+  })
   .catch(err => {
  console.log(err);
   });
